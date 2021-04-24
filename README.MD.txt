@@ -1,0 +1,2 @@
+This repo contains custom firmware I have written using the official firmware from [qmk](https://github.com/qmk/qmk_firmware) as a baseline.
+Included in each `files` directory are pre-complied firmware files for convenience.
