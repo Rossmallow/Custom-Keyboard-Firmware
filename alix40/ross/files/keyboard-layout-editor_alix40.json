@@ -45,26 +45,26 @@
     "T\n]\n}\n<i class='kb kb-Unicode-PrintScreen-2'></i>",
     {
       "x": 1.25,
-      "t": "#000000\n\n#ebf011\n#1cdae6\n\n\n#f022c3",
+      "t": "#000000\n\n#a2a800\n#1cdae6\n\n\n#f022c3",
       "f": 3
     },
     "Y\n\n<i class='fa fa-angle-double-up'></i>\nPgUp\n\n\nrgb up",
     {
       "f": 3
     },
-    "U\n\n1\nHome\n\n\nrgb nxt",
+    "U\n\n1\nHome\n\n\nrgb pv",
     {
-      "t": "#000000\n#f022c3\n#ebf011\n#1cdae6",
+      "t": "#000000\n#f022c3\n#a2a800\n#1cdae6",
       "f": 3
     },
     "I\n<i class='fa fa-volume-up'></i>\n<i class='fa fa-arrow-up'></i>\n<i class='fa fa-arrow-up'></i>",
     {
-      "t": "#000000\n\n#ebf011\n#1cdae6\n\n\n#f022c3",
+      "t": "#000000\n\n#a2a800\n#1cdae6\n\n\n#f022c3",
       "f": 3
     },
-    "O\n\n2\nEnd\n\n\nrgb pv",
+    "O\n\n2\nEnd\n\n\nrgb nxt",
     {
-      "t": "#000000\n\n#ebf011\n#1cdae6",
+      "t": "#000000\n\n#a2a800\n#1cdae6",
       "f": 3
     },
     "P\n\n4\nIns",
@@ -108,39 +108,40 @@
     "G\n=\n+\n<i class='kb kb-Unicode-Scroll-2'></i>",
     {
       "x": 1.5,
-      "t": "#000000\n\n#ebf011\n#1cdae6\n\n\n#f022c3",
+      "t": "#000000\n\n#a2a800\n#1cdae6\n\n\n#f022c3",
       "f": 3
     },
     "H\n\n<i class='fa fa-angle-double-down'></i>\nPgDn\n\n\nrgb dn",
     {
-      "t": "#000000\n#f022c3\n#ebf011\n#1cdae6\n#246fe0",
+      "t": "#000000\n#f022c3\n#a2a800\n#1cdae6\n#246fe0",
       "f": 3
     },
     "J\n<i class='fa fa-fast-backward'></i>\n<i class='fa fa-arrow-left'></i>\n<i class='fa fa-arrow-left'></i>\nNum",
     {
-      "t": "#000000\n#f022c3\n#ebf011\n#1cdae6\n#24e06f",
+      "t": "#000000\n#f022c3\n#a2a800\n#1cdae6\n#24e06f",
       "f": 3
     },
     "K\n<i class='fa fa-volume-down'></i>\n<i class='fa fa-arrow-down'></i>\n<i class='fa fa-arrow-down'></i>\nSym",
     {
-      "t": "#000000\n#f022c3\n#ebf011\n#1cdae6\n#e81717",
+      "t": "#000000\n#f022c3\n#a2a800\n#1cdae6\n#e81717",
       "f": 3
     },
     "L\n<i class='fa fa-fast-forward'></i>\n<i class='fa fa-arrow-right'></i>\n<i class='fa fa-arrow-right'></i>\nFunc",
     {
-      "t": "#000000\n\n#ebf011\n#1cdae6",
+      "t": "#000000\n\n#a2a800\n#1cdae6",
       "f": 3
     },
     "\"\n'\n5\nDel",
     {
-      "t": "#000000",
+      "t": "#000000\n\n#a2a800",
       "f": 3
     },
-    "<i class='kb kb-Return-2'></i>"
+    "<i class='kb kb-Return-2'></i>\n\n3"
   ],
   [
     {
       "x": 0.75,
+      "t": "#000000",
       "f": 3
     },
     "Shift",
@@ -172,12 +173,12 @@
     },
     "B",
     {
-      "t": "#000000\n\n#ebf011",
+      "t": "#000000\n\n#a2a800",
       "f": 3
     },
     "N\n\n<i class='fa fa-angle-double-left'></i>",
     {
-      "t": "#000000\n\n\n\n\n\n\n#ebf011",
+      "t": "#000000\n\n\n\n\n\n\n#a2a800",
       "f": 3
     },
     "M\n\n\n\n\n\n\nSpd 0",
@@ -190,7 +191,7 @@
     },
     ">\n.\n\n\n\n\n\nSpd 2",
     {
-      "t": "#000000\n\n#ebf011",
+      "t": "#000000\n\n#a2a800",
       "f": 3
     },
     "?\n/\n<i class='fa fa-angle-double-right'></i>"
@@ -222,18 +223,18 @@
     "Esc\n-\n_\n\nCtrl",
     {
       "x": 0.5,
-      "t": "#000000\n\n\n#f022c3",
+      "t": "#000000\n#f022c3",
       "f": 3
     },
-    "<i class='kb kb-Line-Start-End'></i>\n\n\n<i class='fa fa-volume-off'></i>\nAlt",
+    "<i class='kb kb-Line-Start-End'></i>\n<i class='fa fa-volume-off'></i>\n\n\nAlt",
     {
       "f": 3
     },
-    "Spc\n\n\n<i class='fa fa-play'></i>\nCtrl",
+    "Spc\n<i class='fa fa-play'></i>\n\n\nCtrl",
     {
       "f": 3
     },
-    "<i class='kb kb-Return-2'></i>\n\n\n<i class='fa fa-stop'></i>\nGui",
+    "<i class='kb kb-Return-2'></i>\n<i class='fa fa-stop'></i>\n\n\nGui",
     {
       "x": 1.25,
       "t": "#000000",
@@ -251,6 +252,9 @@
       "y": 0.25,
       "t": "#ae00ff",
       "a": 6,
+      "fa": [
+        9
+      ],
       "w": 13.75,
       "d": true
     },
@@ -269,7 +273,7 @@
     },
     "Q\n1",
     {
-      "t": "#000000\n\n\n#1cdae6",
+      "t": "#000000\n\n\n#246fe0",
       "f": 3
     },
     "W\n\n\n<i class='fa fa-arrow-up'></i>",
@@ -320,7 +324,7 @@
     },
     "Tab",
     {
-      "t": "#000000\n\n\n#1cdae6",
+      "t": "#000000\n\n\n#246fe0",
       "f": 3
     },
     "A\n\n\n<i class='fa fa-arrow-left'></i>",
@@ -392,12 +396,12 @@
     },
     "V\n8",
     {
-      "t": "#000000",
       "f": 3
     },
-    "B",
+    "B\n9",
     {
       "x": 0.5,
+      "t": "#000000",
       "f": 3
     },
     "B",
@@ -442,7 +446,7 @@
     },
     "<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n\n\n\nShift",
     {
-      "t": "#000000\n\n\n\n#1cdae6",
+      "t": "#000000\n\n\n\n#246fe0",
       "a": 7
     },
     "\n\n\n\nFn",
