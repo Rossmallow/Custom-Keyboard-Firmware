@@ -18,6 +18,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
+// Tap Dance declarations
+enum {
+    CTL_SFT,
+    SFT_CTL,
+    GUI_LYR1
+};
+
+// Tap Dance definitions
+qk_tap_dance_action_t tap_dance_actions[] = {
+    [CTL_SFT] = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_LSFT),
+    [SFT_CTL] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_LCTL),
+    [GUI_LYR1] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_RGUI, 1)
+};
+
 /*
  * Ross' Corne Layout
  */
@@ -34,28 +48,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   └─────┴─────┴─────┘   └─────┴─────┴─────┘
 */
 [0] = LAYOUT_split_3x6_3(
-        KC_ESC,                                     KC_Q,    KC_W,           KC_E,            KC_R,            KC_T,           KC_Y,           KC_U,           KC_I,           KC_O,        KC_P,    KC_DEL,
-        KC_TAB,                                     KC_A,    LT(5, KC_S),    LT(4, KC_D),     LT(3, KC_F),     KC_G,           KC_H,           LT(3, KC_J),    LT(4, KC_K),    LT(5, KC_L), KC_QUOT, KC_ENT,
-        ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_LSHFT), KC_Z,    KC_X,           KC_C,            KC_V,            KC_B,           KC_N,           KC_M,           KC_COMM,        KC_DOT,      KC_SLSH, ACTION_TAP_DANCE_LAYER_TOGGLE(KC_RGUI, 1),
-                                                                             LALT_T(KC_DEL),  LSFT_T(KC_BSPC), LCTL_T(KC_ESC), RALT_T(KC_TAB), RCTL_T(KC_SPC), RGUI_T(KC_ENT)
+        KC_ESC,       KC_Q, KC_W,        KC_E,            KC_R,            KC_T,           KC_Y,           KC_U,           KC_I,          KC_O,        KC_P,    KC_DEL,
+        KC_TAB,       KC_A, LT(5, KC_S), LT(4, KC_D),     LT(3, KC_F),     KC_G,           KC_H,           LT(3, KC_J),    LT(4, KC_K),   LT(5, KC_L), KC_QUOT, KC_ENT,
+        TD(CTL_SFT), KC_Z, KC_X,        KC_C,            KC_V,            KC_B,           KC_N,           KC_M,           KC_COMM,       KC_DOT,      KC_SLSH, TD(GUI_LYR1),
+                                         LALT_T(KC_DEL),  LSFT_T(KC_BSPC), LCTL_T(KC_ESC), RALT_T(KC_TAB), RCTL_T(KC_SPC), RGUI_T(KC_ENT)
 ),
 
 /* 1: Game
 ┌─────┬─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│ Tab │  Q  │  W  │  E  │  R  │  T  │   │  Y  │  U  │  I  │  O  │  P  │ Del │
+│ Esc │  Q  │  W  │  E  │  R  │  T  │   │  Y  │  U  │  I  │  O  │  P  │ Del │
 ├─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-│Shift│  A  │  S  │  D  │  F  │  G  │   │  H  │  J  │  K  │  L  │  '  │ Ent │
+│ Tab │  A  │  S  │  D  │  F  │  G  │   │  H  │  J  │  K  │  L  │  '  │ Ent │
 ├─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┤
-│Ctrl │  Z  │  X  │  C  │  V  │  B  │   │  N  │  M  │  ,  │  .  │  /  │Lyr 0│
+│Shift│  Z  │  X  │  C  │  V  │  B  │   │  N  │  M  │  ,  │  .  │  /  │Lyr 0│
 └─────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │Space│Bksp │Lyr 2│   │ Tab │Space│ Ent │
                   └─────┴─────┴─────┘   └─────┴─────┴─────┘
 */
 [1] = LAYOUT_split_3x6_3(
-        KC_TAB,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_LSFT, KC_TRNS, KC_S,    KC_D,     KC_F,    KC_TRNS,       KC_TRNS, KC_J,    KC_K,    KC_L,    KC_TRNS, KC_TRNS,
-        KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                   KC_SPC,   KC_TRNS, LT(2,KC_LALT), KC_TRNS, KC_TRNS, KC_TRNS
+        KC_TAB,       KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_LSFT,      KC_TRNS, KC_S,    KC_D,     KC_F,    KC_TRNS,       KC_TRNS, KC_J,    KC_K,    KC_L,    KC_TRNS, KC_TRNS,
+        TD(SFT_CTL), KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                        KC_SPC,   KC_TRNS, LT(2,KC_LALT), KC_TRNS, KC_TRNS, KC_TRNS
 ),
 
 /* 2: Game Numbers/Navigation
