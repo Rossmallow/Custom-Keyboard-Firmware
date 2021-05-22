@@ -1,19 +1,17 @@
-# NIU Mini
+![Layout](files/Layout.png)
 
-![NIU Mini](https://cdn.shopify.com/s/files/1/1473/3902/files/40__01.jpg)
+This layout was inspired by the [Miryoku layout](https://github.com/qmk/qmk_firmware/tree/master/users/manna-harbour_miryoku).
 
-A compact 40% (12x4) ortholinear keyboard kit sold by KBDFans.
+I have swapped the mods from the home row to the thumb-cluster, though because this reduces the amount of use of the pinky while maintaining the same amount of use from the thumb.
+Having the shift mod in the thumb-cluster rather than in the home row removes the need to switch which finger holds shift depending on which side of the board the key is.
+In the Miryoku layout, the layer-shift key is always on the opposite side of the board from the functions on that layer. Losing range of motion on one's left index finger when all functions for that layer are on the right side of the board is less disruptive than holding a modifier and losing range on an entire side of the board.
 
-Keyboard Maintainer: QMK Community  
-Hardware Supported: NIU Mini PCB  
-Hardware Availability: [KBDFans](https://kbdfans.myshopify.com/products/niu-mini-40-diy-kit)
+The Niu Mini is conducive to these modifications because of the inclusion of four extra keys on the bottom left and right of the board which can house additional modifier keys which make up for the fact that certain combinations such as 'ctrl+alt+del' can be difficult or even impossible when all three mods are in the thumb-cluster, which is a drawback of this modified layout.
 
-Make example for this keyboard (after setting up your build environment):
 
-    make niu_mini:default
+Use the included [keyboard-layout-editor_niu-mini.json](files/keyboard-layout-editor_niu-mini.json) file on [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com) to edit the layout shown above.
 
-Flashing example for this keyboard ([using the command line](https://docs.qmk.fm/#/newbs_flashing?id=flash-your-keyboard-from-the-command-line)):
+A pre-compiled .hex file of this firmware has also been included in the files directory.
 
-    make niu_mini:default:flash
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+Created by [Ross Nelson](https://rossnelson.me)
