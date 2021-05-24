@@ -75,20 +75,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* 3: Mouse/Numbers/Media
 ┌───────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────┐
-│ RESET │Ms 4 │Ms 2 │Ms Up│Ms 1 │MsWhU│PrScn│PgUp │Home │ Up  │ End │ Ins │█████│ Bksp  │
+│ RESET │Ms 4 │Ms 2 │Ms Up│Ms 1 │MsWhU│PgUp │Home │ Up  │ End │ Ins │█████│█████│ Bksp  │
 ├───────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴───────┤
-│Ms 3    │Ms 5 │MsLft│MsDwn│MsRgh│MsWhD│ScLck│PgDn │Left │Down │Right│ Del │Play        │
+│Ms 3    │Ms 5 │MsLft│MsDwn│MsRgh│MsWhD│PgDn │Left │Down │Right│ Del │█████│Play        │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────────┤
-│██████████│MsWhL│MsAc0│MsAc1│MsAc2│MsWhR│Pause│█████│█████│█████│█████│Mute            │
+│██████████│MsWhL│MsAc0│MsAc1│MsAc2│MsWhR│█████│PrScn│ScLck│Pause│█████│Mute            │
 ├──────┬───┴──┬──┴───┬─┴────┬┴─────┴─────┼─────┴┬────┴────┬┴────┬┴────┬┴────┬─────┬─────┤
 │NLock │██████│██████│██████│ Backspace  │Space │█████████│Prev │VolUp│VolDn│Next │Stop │
 └──────┴──────┴──────┴──────┴────────────┴──────┴─────────┴─────┴─────┴─────┴─────┴─────┘
 */
 [3] = LAYOUT_all(
-    RESET,   KC_BTN4, KC_BTN2, KC_MS_U, KC_BTN1, KC_WH_U, KC_PSCR, KC_PGUP, KC_HOME, KC_UP,   KC_END,   KC_INS, KC_NO,   KC_BSPC,
-    KC_BTN3, KC_BTN5, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_SLCK, KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_DEL,          KC_MPLY,
-    KC_NO,   KC_WH_L, KC_ACL0, KC_ACL1, KC_ACL2, KC_WH_R, KC_PAUS, KC_NO,   KC_NO, KC_NO,   KC_NO,              KC_MUTE, KC_MUTE,
-    KC_NLCK, KC_NO,   KC_NO,   KC_NO,   KC_TRNS,     KC_TRNS,      KC_NO,          KC_MPRV, KC_VOLU, KC_VOLD,   KC_MNXT, KC_MSTP
+    RESET,   KC_BTN4, KC_BTN2, KC_MS_U, KC_BTN1, KC_WH_U, KC_PGUP, KC_HOME, KC_UP,   KC_END,   KC_INS, KC_NO,   KC_NO,   KC_BSPC,
+    KC_BTN3, KC_BTN5, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_DEL, KC_NO,            KC_MPLY,
+    KC_NO,   KC_WH_L, KC_ACL0, KC_ACL1, KC_ACL2, KC_WH_R, KC_NO,   KC_PSCR, KC_SLCK, KC_PAUS,  KC_NO,           KC_MUTE, KC_MUTE,
+    KC_NLCK, KC_NO,   KC_NO,   KC_NO,   KC_TRNS,     KC_TRNS,      KC_NO,            KC_MPRV, KC_VOLU, KC_VOLD, KC_MNXT, KC_MSTP
 ),
 
 /* 4: Function/Numbers/Symbols
