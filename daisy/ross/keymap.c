@@ -73,19 +73,55 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* 3: Numbers/Navigation
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│  `  │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │ Up  │  O  │  P  │Bksp │
+│  `  │  [  │  9  │  8  │  7  │  ]  │PgUp │Home │ Up  │ End │ Ins │ Del │
 ├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
-│ Tab   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │    '    │
+│NumLock│  ;  │  6  │  5  │  4  │  =  │PgDn │Left │Down │Right│ Enter   │
 ├───────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───────┤
-│ Shift   │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /    │
+│█████████│  -  │  3  │  2  │  1  │  \  │█████│█████│█████│█████│███████│
 └─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
-      │Ctrl │ Alt │                Space                 │Lyr 1 │        
+      │  .  │  0  │                Space                 │ Alt  │        
       └─────┴─────┴──────────────────────────────────────┴──────┘         
 */
 [3] = LAYOUT(
-    KC_GRV,  KC_Q,    KC_W,        KC_E,        KC_R,        KC_T, KC_Y, KC_U,        KC_I,        KC_O,        KC_P, KC_BSPC,
-    KC_TAB,  KC_A,    LT(5, KC_S), LT(4, KC_D), LT(3, KC_F), KC_G, KC_H, LT(3, KC_J), LT(4, KC_K), LT(5, KC_L),       KC_QUOT,
-    KC_LSFT, KC_Z,    KC_X,        KC_C,        KC_V,        KC_B, KC_N, KC_M,        KC_COMM,     KC_DOT,            KC_SLSH,
-    _______, KC_LCTL, KC_LALT,             RCTL_T(KC_SPC),     RCTL_T(KC_SPC),                     LT(1, KC_RGUI),    _______
+    KC_GRV,  KC_LBRC, KC_P9, KC_P8, KC_P7, KC_RBRC, KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_INS, KC_DEL,
+    KC_NLCK, KC_SCLN, KC_P6, KC_P5, KC_P4, KC_EQL,  KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT,         KC_ENT,
+    KC_NO,   KC_MINS, KC_P3, KC_P2, KC_P1, KC_BSLS, KC_NO,   KC_NO,   KC_NO,   KC_NO,           KC_NO,
+    _______, KC_PDOT, KC_P0,             TRNS,     TRNS,                       KC_LALT,         _______
 ),
+
+/* 4: Symbols/Mouse
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
+│  ~  │  {  │  (  │  *  │  &  │  }  │MsWhU│Ms 1 │Ms Up│Ms 2 │Ms 4 │Ms 3 │
+├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
+│ Caps  │  :  │  ^  │  %  │  $  │  +  │MsWhD│MsLft│MsDwn│MsRgh│ Ms 5    │
+├───────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───────┤
+│█████████│  _  │  #  │  @  │  !  │  |  │MsWhL│MsAc0│MsAc1│MsAc2│MsWhR  │
+└─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
+      │  (  │  )  │                Space                 │██████│        
+      └─────┴─────┴──────────────────────────────────────┴──────┘         
+*/
+[4] = LAYOUT(
+    KC_TILD, KC_LCBR, KC_LPRN, KC_ASTR, KC_AMPR, KC_RBRC, KC_WH_U, KC_BTN1, KC_MS_U, KC_BTN2, KC_BTN4, KC_BTN3,
+    KC_CAPS, KC_COLN, KC_CIRC, KC_PERC, KC_DLR,  KC_EQL,  KC_WH_D, KC_MS_L, KC_MS_D, KC_MS_R,          KC_BTN5,
+    KC_NO,   KC_UNDS, KC_HASH, KC_AT,   KC_EXLM, KC_BSLS, KC_WH_L, KC_ACL0, KC_ACL1, KC_ACL2,          KC_WH_R,
+    _______, KC_LPRN, KC_RPRN,                 TRNS,     TRNS,                       KC_NO,            _______
+),
+
+/* 5: Function/Media
+┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
+│RESET│ F10 │ F9  │ F8  │ F7  │PrScn│RgbUp│RgbPv│VolUp│RgbNx│ClrUp│RgbTg│
+├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
+│███████│ F11 │ F6  │ F5  │ F4  │ScLck│RgbDn│Prev │VolDn│Next │ ClrDn   │
+├───────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───────┤
+│█████████│ F12 │ F3  │ F2  │ F1  │Pause│█████│Play │Stop │Mute │███████│
+└─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
+      │█████│█████│                Space                 │██████│        
+      └─────┴─────┴──────────────────────────────────────┴──────┘         
+*/
+[5] = LAYOUT(
+    RESET,   KC_F10, KC_F9, KC_F8, KC_F7, KC_PSCR, RGB_VAI, RGB_RMOD, KC_VOLU, RGB_MOD, RGB_HUI, RGB_TOG,
+    KC_NO,   KC_F11, KC_F6, KC_F5, KC_F4, KC_SLCK, RGB_VAD, KC_MPRV,  KC_VOLD, KC_MNXT,          RGB_HUD,
+    KC_NO,   KC_F12, KC_F3, KC_F2, KC_F1, KC_PAUS, KC_NO,   KC_MPLY,  KC_MSTP, KC_MUTE,          KC_NO,
+    _______, KC_NO,  KC_NO,             TRNS,     TRNS,                        KC_NO,            _______
+)
 };
