@@ -1,0 +1,167 @@
+[
+  [
+    {
+      "t": "#000000\n\n#246fe0\n#246fe0"
+    },
+    "Esc\n\n~\n`",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "!\n1\n\nF1",
+    "@\n2\n\nF2",
+    "#\n3\n\nF3",
+    "$\n4\n\nF4",
+    "%\n5\n\nF5",
+    "^\n6\n\nF6",
+    "&\n7\n\nF7",
+    "*\n8\n\nF8",
+    "(\n9\n\nF9",
+    ")\n0\n\nF10",
+    "_\n-\n\nF11",
+    "+\n=\n\nF12",
+    {
+      "w": 2
+    },
+    "Backspace\n\n\nDel"
+  ],
+  [
+    {
+      "t": "#000000",
+      "w": 1.5
+    },
+    "Tab",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "Q\n\n\n<i class='fa fa-fast-backward'></i>",
+    "W\n\n\n<i class='fa fa-play'></i>",
+    "E\n\n\n<i class='fa fa-stop'></i>",
+    "R\n\n\n<i class='fa fa-fast-forward'></i>",
+    {
+      "t": "#000000"
+    },
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "P\n\n\nrgb nx",
+    {
+      "t": "#000000\n\n\n\n\n\n\n#246fe0"
+    },
+    "{\n[\n\n\n\n\n\nrgb up",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "}\n]\n\ncolor nx",
+    {
+      "x": 0.25,
+      "w": 1.25,
+      "h": 2,
+      "w2": 1.5,
+      "h2": 1,
+      "x2": -0.25
+    },
+    "\n\n\nRGB Off\n\n\n\n\n\n<i class='kb kb-Return-2'></i>"
+  ],
+  [
+    {
+      "t": "#000000",
+      "w": 1.25,
+      "w2": 1.75,
+      "l": true
+    },
+    "Caps Lock",
+    {
+      "x": 0.5,
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "A\n\n\n<i class='fa fa-volume-down'></i>",
+    "S\n\n\n<i class='fa fa-volume-up'></i>",
+    "D\n\n\n<i class='fa fa-volume-off'></i>",
+    {
+      "t": "#000000"
+    },
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    ":\n;\n\nrgb pv",
+    {
+      "t": "#000000\n\n\n\n\n\n\n#246fe0"
+    },
+    "\"\n'\n\n\n\n\n\nrgb dn",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "\\\n|\n\ncolor pv"
+  ],
+  [
+    {
+      "t": "#000000",
+      "w": 2
+    },
+    "Shift",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "<\n,",
+    ">\n.",
+    "?\n/",
+    "Shift",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "<i class='fa fa-arrow-up'></i>\n\n\nPage Up",
+    {
+      "t": "#000000"
+    },
+    "Fn"
+  ],
+  [
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "a": 7,
+      "w": 6.25
+    },
+    "",
+    {
+      "t": "#000000\n\n\n#246fe0",
+      "a": 4
+    },
+    "Alt\n\n\nReset",
+    {
+      "t": "#000000"
+    },
+    "Win",
+    {
+      "t": "#000000\n\n\n#246fe0"
+    },
+    "<i class='fa fa-arrow-left'></i>\n\n\nHome",
+    "<i class='fa fa-arrow-down'></i>\n\n\nPage Dn",
+    "<i class='fa fa-arrow-right'></i>\n\n\nEnd"
+  ]
+]
