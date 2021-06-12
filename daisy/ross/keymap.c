@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,  KC_Q,    KC_W,        KC_E,        KC_R,        KC_T, KC_Y, KC_U,        KC_I,        KC_O,        KC_P, KC_BSPC,
     KC_TAB,  KC_A,    LT(5, KC_S), LT(4, KC_D), LT(3, KC_F), KC_G, KC_H, LT(3, KC_J), LT(4, KC_K), LT(5, KC_L),       KC_ENT,
     KC_LSFT, KC_Z,    KC_X,        KC_C,        KC_V,        KC_B, KC_N, KC_M,        KC_COMM,     KC_DOT,            KC_SLSH,
-    _______, KC_LCTL, KC_LALT,             RCTL_T(KC_SPC),     RCTL_T(KC_SPC),        _______,     LT(1, KC_RGUI),    _______
+    _______, KC_LCTL, KC_LALT,             RCTL_T(KC_SPC),     RCTL_T(KC_SPC),        _______,     KC_RGUI,           _______
 ),
 
 /* 1: Game Layer
@@ -45,13 +45,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 └─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
       │Ctrl │ Alt │                Space                 │Lyr 1 │
       └─────┴─────┴──────────────────────────────────────┴──────┘
-*/
+
 [1] = LAYOUT(
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, LT(2, KC_BSPC),
     KC_TRNS, KC_TRNS, KC_S,    KC_D,    KC_F,    KC_TRNS, KC_TRNS, KC_J,    KC_K,    KC_L,             KC_ENT,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,
     _______, KC_TRNS, KC_TRNS,            KC_SPC,     KC_SPC,               _______, TG(1),            _______
-),
+),*/
 
 /* 2: Game Numbers/Navigation
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
@@ -63,13 +63,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 └─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
       │Ctrl │ Alt │                Space                 │██████│
       └─────┴─────┴──────────────────────────────────────┴──────┘
-*/
+
 [2] = LAYOUT(
     KC_GRV,  KC_1,    KC_UP,   KC_2,    KC_3,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL,
     KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_4,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_QUOT,
     KC_TRNS, KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,
     _______, KC_TRNS, KC_TRNS,            KC_TRNS,     KC_TRNS,             _______, TG(1),            _______
-),
+),*/
 
 /* 3: Numbers/Navigation
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─────┤
 │NumLock│  ;  │  6  │  5  │  4  │  =  │PgDn │Left │Down │Right│    '    │
 ├───────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───────┤
-│█████████│  -  │  3  │  2  │  1  │  \  │█████│█████│█████│█████│███████│
+│ Shift   │  -  │  3  │  2  │  1  │  \  │█████│█████│█████│█████│███████│
 └─────┬───┴─┬───┴─┬───┴─────┴─────┴─────┴─────┴─────┴────┬┴─────┼───────┘
       │  .  │  0  │                Space                 │ Alt  │
       └─────┴─────┴──────────────────────────────────────┴──────┘
@@ -85,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [3] = LAYOUT(
     KC_GRV,  KC_LBRC, KC_P9, KC_P8, KC_P7, KC_RBRC, KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_INS, KC_DEL,
     KC_NLCK, KC_SCLN, KC_P6, KC_P5, KC_P4, KC_EQL,  KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT,         KC_QUOT,
-    KC_NO,   KC_MINS, KC_P3, KC_P2, KC_P1, KC_BSLS, KC_NO,   KC_NO,   KC_NO,   KC_NO,           KC_NO,
+    KC_TRNS,   KC_MINS, KC_P3, KC_P2, KC_P1, KC_BSLS, KC_NO,   KC_NO,   KC_NO,   KC_NO,           KC_NO,
     _______, KC_PDOT, KC_P0,          KC_TRNS,     KC_TRNS,            _______,        KC_LALT, _______
 ),
 
