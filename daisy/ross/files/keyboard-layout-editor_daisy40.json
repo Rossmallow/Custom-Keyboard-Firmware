@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Daisy 40%",
+    "author": "Rossmallow",
+    "notes": "矩阵关系图:\n```\n[\"1,1\",\"1,2\",\"1,3\",\"1,4\",\"1,5\",\"1,6\",\"1,7\",\"1,8\",\"1,9\",\"1,10\",\"1,11\",\"1,12\"],\n[{w:1.25},\"2,1\",\"2,2\",\"2,3\",\"2,4\",\"2,5\",\"2,6\",\"2,7\",\"2,8\",\"2,9\",\"2,10\",{w:1.75},\"2,12\"],\n[{w:1.75},\"3,1\",\"3,3\",\"3,4\",\"3,5\",\"3,6\",\"3,7\",\"3,8\",\"3,9\",\"3,10\",{w:1.25},\"3,11\",\"3,12\"],\n[{w:1.25},\"4,1\",\"4,2\",{w:1.25},\"4,3\",{w:2.25},\"4,5\",{w:2.75},\"4,7\",{w:1.25},\"4,10\",\"4,11\",{w:1.25},\"4,12\"]\n```\n\n空白配列图:\n```\n[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\n[{w:1.25},\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",{w:1.75},\"\"],\n[{w:1.75},\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",{w:1.25},\"\",\"\"],\n[{w:1.25},\"\",\"\",{w:1.25},\"\",{w:2.25},\"\",{w:2.75},\"\",{w:1.25},\"\",\"\",{w:1.25},\"\"]\n```\n\nFn:\n```\n\"1\":[\"ACTION_LAYER_TAP_KEY\",1,\"KC_DOT\"],\"10\":[\"ACTION_LAYER_TAP_KEY\",1,\"KC_SPACE\"],\"20\":[\"ACTION_LAYER_MOMENTARY\",\"2\"],\"21\":[\"ACTION_BACKLIGHT_INCREASE\"],\"22\":[\"ACTION_BACKLIGHT_TOGGLE\"],\"23\":[\"ACTION_BACKLIGHT_DECREASE\"],\"24\":[\"ACTION_FUNCTION\",1,0],\"25\":[\"ACTION_FUNCTION\",1,3]\n```"
+  },
+  [
+    {
+      "t": "#000000\n#246fe0\n\n\n\n\n\n#e81717"
+    },
+    "Esc\n`\n\n\n\n\n\nRESET",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717"
+    },
+    "Q\n[\n{\nF10",
+    "W\n9\n(\nF9",
+    "E\n8\n*\nF8",
+    "R\n7\n&\nF7",
+    "T\n]\n}\n<i class='kb kb-Unicode-PrintScreen-2'></i>",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n\n\n\n\n#f022c3"
+    },
+    "Y\nPgUp\n<i class='fa fa-angle-double-up'></i>\n\n\n\n\nrgb up",
+    "U\nHome\nMs1\n\n\n\n\nrgb pv",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n#f022c3"
+    },
+    "I\n<i class='fa fa-arrow-up'></i>\n<i class='fa fa-arrow-up'></i>\n<i class='fa fa-volume-up'></i>",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n\n\n\n\n#f022c3"
+    },
+    "O\nEnd\nMs2\n\n\n\n\nrgb nxt",
+    "P\nIns\nMs4\n\n\n\n\nclr up",
+    "<i class='kb kb-Unicode-BackSpace-DeleteLeft-Big'></i>\n<i class='kb kb-Unicode-DeleteRight-Big'></i>\nMs3\n\n\n\n\nrgb tg"
+  ],
+  [
+    {
+      "t": "#000000\n#246fe0\n#24e06f",
+      "w": 1.25
+    },
+    "<i class='kb kb-Line-Start-End'></i>\nNum Lock\nCaps",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717"
+    },
+    "A\n;\n:\nF11",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717\n#f022c3"
+    },
+    "S\n6\n^\nF6\nMedia",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717\n#db950b"
+    },
+    "D\n5\n%\nF5\nMouse",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717\n#1cdae6"
+    },
+    "F\n4\n$\nF4\nNav",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717"
+    },
+    "G\n=\n+\n<i class='kb kb-Unicode-Scroll-2'></i>",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n\n\n\n\n#f022c3"
+    },
+    "H\nPgDn\n<i class='fa fa-angle-double-down'></i>\n\n\n\n\nrgb dn",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n#f022c3\n#246fe0"
+    },
+    "J\n<i class='fa fa-arrow-left'></i>\n<i class='fa fa-arrow-left'></i>\n<i class='fa fa-fast-backward'></i>\nNum",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n#f022c3\n#24e06f"
+    },
+    "K\n<i class='fa fa-arrow-down'></i>\n<i class='fa fa-arrow-down'></i>\n<i class='fa fa-volume-down'></i>\nSym",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n#f022c3\n#e81717"
+    },
+    "L\n<i class='fa fa-arrow-right'></i>\n<i class='fa fa-arrow-right'></i>\n<i class='fa fa-fast-forward'></i>\nFunc",
+    {
+      "t": "#000000\n#1cdae6\n#db950b\n#f022c3",
+      "w": 1.75
+    },
+    "<i class='kb kb-Return-2'></i>\n'\nMs5\nclr dn"
+  ],
+  [
+    {
+      "t": "#000000",
+      "w": 1.75
+    },
+    "Shift",
+    {
+      "t": "#000000\n#246fe0\n#24e06f\n#e81717"
+    },
+    "Z\n-\n_\nF12",
+    "X\n3\n#\nF3",
+    "C\n2\n@\nF2",
+    "V\n1\n!\nF1",
+    "B\n\\\n|\n<i class='kb kb-Multimedia-Pause'></i>",
+    {
+      "t": "#000000\n\n#db950b"
+    },
+    "N\n\n<i class='fa fa-angle-double-left'></i>",
+    {
+      "t": "#000000\n\n#ffffff\n#f022c3\n\n\n\n#db950b"
+    },
+    "M\n\n\n<i class='fa fa-play'></i>\n\n\n\nSpd1",
+    {
+      "t": "#000000\n\n\n#f022c3\n\n\n\n#db950b"
+    },
+    "<\n,\n\n<i class='fa fa-stop'></i>\n\n\n\nSpd2",
+    ">\n.\n\n<i class='fa fa-volume-off'></i>\n\n\n\nSpd3",
+    {
+      "t": "#000000\n\n#db950b",
+      "w": 1.25
+    },
+    "?\n/\n<i class='fa fa-angle-double-right'></i>"
+  ],
+  [
+    {
+      "x": 1.25,
+      "t": "#000000\n#246fe0\n#24e06f"
+    },
+    "Ctrl\n.\n(",
+    "Alt\n0\n)",
+    {
+      "t": "#000000",
+      "a": 7,
+      "w": 6.25
+    },
+    "",
+    {
+      "t": "#000000\n#246fe0",
+      "a": 4,
+      "w": 1.25
+    },
+    "GUI\nAlt"
+  ]
+]

@@ -1,15 +1,17 @@
-# Daisy
+![Layout](files/Layout.png)
 
-![Daisy PCB](https://cdn.shopify.com/s/files/1/2711/4238/products/HTB1Pj1UggMPMeJjy1Xcq6xpppXa7_1024x1024.jpg)
 
-A 40% keyboard kit sold by KPrepublic.
 
-* Keyboard Maintainer: [westfoxtrot](https://github.com/westfoxtrot)
-* Hardware Supported: Daisy PCB Rev.1, Daisy PCB Rev.2
-* Hardware Availability: [KPrepublic](https://kprepublic.com/products/daisy-40-custom-keyboard-pcb)
+This layout was inspired by the [Miryoku layout](https://github.com/qmk/qmk_firmware/tree/master/users/manna-harbour_miryoku).
 
-Make example for this keyboard (after setting up your build environment):
+I had to modify the Miryoku layout for this board since unlike the 6 thumb keys in the Miryoku, I wanted to try using a full-sized spacebar on this board. The transition wasn't too difficult, but the placement of the numpad 'dot' and 'zero' are a little bit awkward.
 
-    make daisy:default
+Use the included [keyboard-layout-editor_daisy40.json](files/keyboard-layout-editor_daisy40.json) file on [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com) to edit the layout shown above.
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+The instructions for this board on [KPREPUBLIC](https://kprepublic.com/collections/pcb/products/daisy-40-custom-keyboard-pcb?_pos=2&_sid=15de7ce2c&_ss=r) suggest using [ydkb.io](https://ydkb.io/) to create and build the firmware, which I found is unnecessary. What is necessary, though is to download the reflash tool since the QMK boot loader isn't natively installed on this board. (It can be installed by [ISP Flashing](https://docs.qmk.fm/#/isp_flashing_guide) it, which is apparently a very complex process which may require special tools.) After downloading the tool from ydkb.io ([I have included Ver.20200306 demo version](files/YDKBs-reflash.zip), which worked for me) click on 'Choose Firmware', select the QMK firmware you wish to flash, click 'Reflash', then follow the instructions. This will flash QMK firmware without the need to ISP Flash the QMK boot loader. A VIA .hex is also available for the Daisy if that is more convenient.
+
+A pre-compiled QMK .hex file and a pre-compiled YDKB .hex file of this firmware have also been included in the files directory.
+
+
+
+Created by [Ross Nelson](https://rossnelson.me)
