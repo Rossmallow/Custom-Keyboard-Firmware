@@ -26,6 +26,5 @@
 //#define TAPPING_TERM 175
 
 #define USB_MAX_POWER_CONSUMPTION 100
-#define PERMISSIVE_HOLD
 #define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) )
 #endif
