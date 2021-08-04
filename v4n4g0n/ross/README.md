@@ -4,7 +4,7 @@
 
 This layout was inspired by the [Miryoku layout](https://github.com/qmk/qmk_firmware/tree/master/users/manna-harbour_miryoku).
 
-For this board, I used practically the same layout as my [Daisy40 build](../../daisy/ross/README.md) with slight modifications since this board has about 10 more keys than the Daisy.
+For this board, I used practically the same layout as my [Daisy40 build](../../daisy/ross/readme.md) with slight modifications since this board has about 10 more keys than the Daisy.
 
 Use the included [keyboard-layout-editor_v4n4g0n.json](files/keyboard-layout-editor_v4n4g0n.json) file on [keyboard-layout-editor.com](http://www.keyboard-layout-editor.com) to edit the layout shown above.
 
