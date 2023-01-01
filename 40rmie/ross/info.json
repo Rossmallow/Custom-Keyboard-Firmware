@@ -1,11 +1,30 @@
 {
-	"keyboard_name": "40rmie",
-    "usb.device_version": "0x0001",
-    "usb.pid": "0x6060",
-    "usb.vid": "0xFEED",
-	"url": "https://github.com/KuroTheCrazy/40rmie",
-	"maintainer": "KuroTheCrazy",
     "manufacturer": "KuroTheCrazy",
+	"keyboard_name": "40rmie",
+	"maintainer": "KuroTheCrazy",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": false,
+        "audio": false,
+        "key_lock": false
+    },
+    "matrix_pins": {
+        "rows": ["B0", "B1", "B2", "B3", "B4"],
+        "cols": ["B5", "B6", "B7", "C6", "C7", "D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "F0", "F1"]
+    },
+    "processor": "atmega32u4",
+    "usb": {
+        "device_version": "0x0001",
+        "pid": "0x6060",
+        "vid": "0xFEED"},
+	"url": "https://github.com/KuroTheCrazy/40rmie",
 	"width": 16.25,
 	"height": 5.25,
 	"layouts": {
