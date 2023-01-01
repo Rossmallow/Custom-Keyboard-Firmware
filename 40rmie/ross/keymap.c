@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* 1: Gaming Layer
     ┌─────┬─────┬─────┬─────┬─────┬─────┐         ┌─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┐
-    │  1  │  2  │  3  │  4  │  5  │  6  │         │ CAD │LOCK │Play │Mute │   │ Ins │Home │PgUp │
+    │  1  │  2  │  3  │  4  │  5  │  6  │         │ F1  │ F3  │ F5  │ F12 │   │ Ins │Home │PgUp │
 ┌───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬─────┬─┴───┬─┴───┬─┴───┬─┴─────┴─┐ ├─────┼─────┼─────┤
 │ Esc │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │ Bkspace │ │ Del │ End │PgDn │
 ├─────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───────┤ └─────┴─────┴─────┘
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 └─────┴─────┴─────┴───────────────────────────────────────┴─────┴─────┴─────┘ └─────┴─────┴─────┘
 */
 [1] = LAYOUT(
-    		        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_TRNS, KC_TRNS, 
+    		        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                  KC_F1, KC_F3, KC_F5, KC_F12,                        KC_TRNS, KC_TRNS, KC_TRNS, 
     		     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS, KC_TRNS, 
     		     KC_TRNS, KC_TRNS, KC_S,    KC_D,    KC_F,    KC_TRNS, KC_TRNS, KC_J,    KC_K,    KC_L,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                     KC_TRNS, 
