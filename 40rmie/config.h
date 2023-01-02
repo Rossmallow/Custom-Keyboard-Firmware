@@ -53,7 +53,7 @@
 #define RGBLIGHT_VAL_STEP 8
 #endif
 
+#endif
+
 /* Helps avoid accidentally executing commands with RCTL_T(KC_SPC) */
 #define IGNORE_MOD_TAP_INTERRUPT
-
-#endif
