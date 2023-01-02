@@ -2,6 +2,7 @@
     "manufacturer": "KuroTheCrazy",
 	"keyboard_name": "40rmie",
 	"maintainer": "KuroTheCrazy",
+    "bootloader": "atmel-dfu",
     "diode_direction": "COL2ROW",
     "matrix_pins": {
         "rows": ["B0", "B1", "B2", "B3", "B4"],
